@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Использование микроразметки</title>
+</head>
+<body>
+   
+    
+    <div class="header">
+        <div class="botton_blue">
+            <style>
+                .button-secondary {
+                    color: white;
+                    border-radius: 4px;
+                    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+                }
+                .button-secondary2 {
+                    color: white;
+                    border-radius: 4px;
+                    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+                }
+                .button-secondary {
+                    background: rgb(66, 184, 221);
+                }
+                .button-secondary2 {
+                    background: rgb(126, 126, 126);
+                }
+            </style>
+            <button onclick = "document.getElementById('png').style.display='none'; document.getElementById('mp4').style.display='block';" class="button-secondary pure-button">НАКОРМИТЬ БОБИКА</button>
+        </div>
+        
+        <div class="logo">
+                <b>ЭТО ЛОГОТИП</b>
+        </div>
+
+        <div class="botton_head"> 
+            <div class="pure-menu pure-menu-horizontal">
+                <a href="home.html" class="pure-menu-heading pure-menu-link">Главная</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">Ещё что-то</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="" class="pure-menu-link">О нас</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="contacts.html" class="pure-menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <video id="mp4" class="bobik" style="display: none" src="resources/bobik.MP4"></video>
+    <img id="png" class="bobik" src="resources/bobik.png" alt="">
+    <h1 class="bobik">Привет, я Бобик!</h1>
+
+    <div class="bodys" id="1">
+        <div class="head_body">
+            <h1 class="text_head_body">Что такое микроразметка и зачем она нужна?</h1>
+            <h2 class="date_head_body">19 сентября 2023</h2>    
+        </div> 
+
+
+
+        <div class="blog"> 
+            <div class="text_body">
+                <div class="text blue_split"><b>Микроразметка</b> — это специальные теги и атрибуты в веб-верстке, использующиеся для лучшего понимания информации на страницах сайта поисковыми роботами. Ее использование помогает получить качественные переходы на сайт, тем самым увеличив трафик без лишних затрат бюджета.</div>
+                <div class="text" id="2"><b>В чем заключаются преимущества микроразметки?</b><br>В первую очередь, микроразметка сайта удобна для пользователя - тем, что кратко передает содержание нужной страницы. Например, если у вас интернет-магазин, пользователь может увидеть цену товара, ключевые характеристики и отзывы покупателей. Если есть точка в офлайне, в микроразметке можно увидеть ее время работы, адрес и контактные данные. Если вы публикуете статьи, то разметка отображает выходные данные и автора каждого материала. <br> <br> Кроме того, использование микроразметки делает сайт более привлекательным визуально в поисковой выдаче. Красивый сниппет хорош с точки зрения кликабельности, что увеличивает позицию в выдаче (но это происходит не сразу, а в соответствии с реакцией пользователей) и увеличивает посещаемость сайта. Не факт, что это сработает сразу, но если делать эту работу качественно, а параллельно совершенствовать контент, верстку и ассортимент, то можно добиться более чем положительного эффекта, так как это работает и на людей, и на поисковики. <br> <br> Если вы используете микроразметку, то необходимо делать это со всем контентом сайта. Для интернет-магазина это, в первую очередь, каталог товаров, отдельные позиции и категории, а также статьи на сайте. Любые структурированные данные должны соответствовать контенту конкретной веб-страницы, в код которой они добавлены, и не должны описывать скрытую от посетителей информацию.</div>
+                <div class="text" id="3"><b>Составляющие микроразметки сайта</b><br>Микроразметка сайта состоит из тегов и атрибутов, отвечающих за конкретное содержимое: некоторые из них видны посетителям, некоторые нужны для поисковых роботов. Если брать во внимание ассортимент интернет-магазина, то в сниппет можно вставить описание и фото товара, отзывы о нем, информацию о наличии в продаже.</div>
+                <div class="text" id="4"><b>Словари микроразметки</b><br>В микроразметке существует несколько словарей, то есть наборов атрибутов. Поговорим о наиболее распространенных и широко используемых в современном интернете.</div>
+                <div class="text"><b>1. Schema.org</b><br>Cловарь Schema.org создавался сразу несколькими поисковиками для предоставления основной информации об объекте (в том числе товаре) без необходимости заходить на сайт. В нем есть три основных атрибута (itemscope — указывает на сам объект, itemtype — на его тип, itemprop — на свойства, если речь идет о товарах, то это могут быть, например, цена и описание).</div>
+                <div class="text"><b>2. Open Graph</b><br>Изначально этот словарь был разработан Facebook* для корректного отображения веб-страниц в соцсетях, но сейчас его поддерживают и мессенджеры, в том числе популярный ныне на российском рынке Telegram. У него также есть ряд атрибутов: <br>
+                    <table class="pure-table">
+                        <tbody>
+                            <tr class="pure-table-odd">
+                                <td><b>«og:locale»</b></td>
+                                <td>местоположение сайта и язык контента</td>
+                            </tr>
+                            <tr>
+                                <td><b>«og:type»</b></td>
+                                <td>тип отображаемого контента (обзор, статья и т.д.)</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td><b>«og:title»</b></td>
+                                <td>метатег title</td>
+                            </tr>
+                            <tr>
+                                <td><b>«og:description»</b></td>
+                                <td>метатег description</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td><b>«og:url»</b></td>
+                                <td>адрес веб-страницы</td>
+                            </tr>
+                            <tr>
+                                <td><b>«og:image»</b></td>
+                                <td>изображение в тексте статьи, обзора, описания и т.д.</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td><b>«og:site_name»</b></td>
+                                <td>название сайта</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text" id="5"><b>Микроформаты</b><br>Это специальный вариант разметки, помогающий поисковым ботам понимать контент. Основная их задача - рассказать о содержащихся данных. Для интернет-магазина важны такие данные, как адрес и контакты, описания товаров и отзывы. <br><br>Для работы с информацией сайта интернет-магазина подходит формат hCard, который поддерживают и Google, и Яндекс.Он структурирует географические координаты и контактные данные сайта, которые автоматически передаются в справочники поисковиков, в том числе при изменении.</div>
+                <div class="text" id="6"><b>Синтаксисы микроразметки</b><br>Под синтаксисом микроразметки понимается способ применения словаря. Унифицированного стандарта синтаксиса нет, но есть несколько наиболее часто используемых.</div>
+                <div id="page01" class="text border"><b>Microdata</b><br>Так называемые микроданные состоят из нескольких элементов (вспомним атрибуты itemscope, itemtype и itemprop в Schema.org). Размечаются обычно те данные, которые уже доступны пользователю, но иногда для разметки необходимы и метаданные. <br>
+                    <img class="img" src="resources/microdata.jpg" alt="Пример микроразметки schema.org в формате Microdata.">
+                    <div class="alt">Пример микроразметки schema.org в формате Microdata.</div>
+                    <button class="button-secondary2 pure-button">Назад</button>
+                    <button class="button-secondary2 pure-button">1</button>
+                    <button onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page02').style.display='block';" class="button-secondary pure-button">2</button>
+                    <button onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page03').style.display='block';" class="button-secondary pure-button">3</button>
+                    <button onclick = "document.getElementById('page01').style.display='none'; document.getElementById('page02').style.display='block';" class="button-secondary pure-button">Далее</button>
+                </div>
+                <div id="page02" class="text border" style="display: none"><b>RDFa</b><br>Этот синтаксис был разработан еще 2004 году для разметки HTML-кода с целью структурирования данных. Сейчас из-за относительной сложности реализации он используется заметно реже, чем раньше, а Google отдает предпочтение JSON-LD или Microdata. <br>
+                    <img class="img" src="resources/RDFa.jpg" alt="Пример микроразметки schema.org в формате RDFa.">
+                    <div class="alt">Пример микроразметки schema.org в формате RDFa.</div>       
+                    <button onclick = "document.getElementById('page02').style.display='none'; document.getElementById('page01').style.display='block';" class="button-secondary pure-button">Назад</button>
+                    <button onclick = "document.getElementById('page02').style.display='none'; document.getElementById('page01').style.display='block';" class="button-secondary pure-button">1</button>
+                    <button class="button-secondary2 pure-button">2</button>
+                    <button onclick = "document.getElementById('page02').style.display='none'; document.getElementById('page03').style.display='block';" class="button-secondary pure-button">3</button>
+                    <button onclick = "document.getElementById('page02').style.display='none'; document.getElementById('page03').style.display='block';" class="button-secondary pure-button">Далее</button>
+                </div>
+                <div id="page03" class="text border" style="display: none"><b>JSON-LD</b><br>Это актуальный и популярный синтаксис, существующий с 2010 года и внедряющийся в тег script. Он состоит из пар ключей и значений, понятных как пользователю, так и поисковому боту. <br>
+                    <img class="img" src="resources/JSON-LD.jpg" alt="Пример микроразметки schema.org в формате JSON-LD.">
+                    <div class="alt">Пример микроразметки schema.org в формате JSON-LD.</div>
+                    <button onclick = "document.getElementById('page03').style.display='none'; document.getElementById('page02').style.display='block';" class="button-secondary pure-button">Назад</button>
+                    <button onclick = "document.getElementById('page03').style.display='none'; document.getElementById('page01').style.display='block';" class="button-secondary pure-button">1</button>
+                    <button onclick = "document.getElementById('page03').style.display='none'; document.getElementById('page02').style.display='block';" class="button-secondary pure-button">2</button>
+                    <button class="button-secondary2 pure-button">3</button>
+                    <button class="button-secondary2 pure-button">Далее</button>
+                </div>
+                <div class="text" id="7"><b>Реализация микроразметки</b><br><b>1. Статьи</b><br>Для публикуемых на сайте статей (у интернет-магазина это может быть блог или советы экспертов) используются следующие атрибуты: <br> <br>
+                    <table class="pure-table">
+                        <tbody>
+                            <tr class="pure-table-odd">
+                                <td><b>headline</b></td>
+                                <td>название материала</td>
+                            </tr>
+                            <tr>
+                                <td><b>datePublished</b></td>
+                                <td>дата публикации</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td><b>image</b></td>
+                                <td>изображение</td>
+                            </tr>
+                            <tr>
+                                <td><b>articleBody</b></td>
+                                <td>основной текст статьи</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td><b>author</b></td>
+                                <td>автор</td>
+                            </tr>
+                            <tr>
+                                <td><b>publisher</b></td>
+                                <td>название ресурса, на котором статья была опубликована</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br><b>2. Хлебные крошки</b><br> Так называется система навигации на сайте, демонстрирующая структуру и вложенность страниц. Можно сделать линейную цепочку навигации либо систему с возможностью вернуться назад на главную страницу или в каталог товаров. Хлебные крошки повышают уникальность сниппета, появляясь в поисковой выдаче. <br> <br> Для разметки хлебных крошек используются следующие теги: <br> <br>
+                    <table class="pure-table">
+                        <tbody>
+                            <tr class="pure-table-odd">
+                                <td><b>itemscope</b></td>
+                                <td>указание на описываемый объект</td>
+                            </tr>
+                            <tr>
+                                <td><b>itemtype</b></td>
+                                <td>указание на тип объекта</b></td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td><b>itemprop="itemListElement"</b></td>
+                                <td>указывает на принадлежность элемента к списку</td>
+                            </tr>
+                            <tr>
+                                <td><b>itemprop="item"</b></td>
+                                <td>указывает на ссылку</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td><b>itemprop="name"</b></td>
+                                <td>указывает на название хлебной крошки</td>
+                            </tr>
+                            <tr>
+                                <td><b>meta itemprop="position" content="%number%"</b></td>
+                                <td>указывает на позицию элемента в цепочке навигации</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                </div>
+                <div class="text" id="8"><b>Микроразметка товаров в интернет-магазине</b><br>Google и Яндекс рекомендуют устанавливать микроразметку на разделы и страницы с ассортиментом товаров для интернет-магазина: поисковые боты могут использовать эти данные для сниппета, что, в свою очередь, побуждает пользователя перейти по ссылке. <br> <br> Для товаров достаточно атрибутов name (название), description (описание), image (изображение), price (цена) и priceCurrency (валюта). Если вы хотите добавить в сниппет отзывы, необходимо поле AggregateRating.</div>
+                <div class="text" id="9"><b>Проверка микроразметки на ошибки</b><br>Готовую разметку нужно проверить ее на ошибки - только правильно структурированные данные доступны поисковым роботам. В Google это делается на странице валидатора, которая отображает малейшие ошибки в отчете и тем самым дает возможность их исправить. <br> <br>Для проверки в Яндексе используется валидатор в вебмастере, где проблемы и несоответствия отмечаются красным с комментариями. Соответственно, все ошибки также можно отследить и исправить.</div>
+                <div class="text" id="10">Подведем кратко итоги. Микроразметка нужна, чтобы сделать сниппеты более заметными. Это может влиять на ранжирование, но не напрямую, а через поисковое поведение пользователей. Размечаться должен весь контент, без ошибок: все атрибуты должны быть прописаны правильно. Однако валидаторы поисковых систем способны проверять код разметки, тем самым помогая исправлять ошибки. Главное - не забывать это делать.</div>
+                <div class="text alt2">*Instagram и Facebook принадлежат компании Meta, чья деятельность запрещена на территории России с 21 марта 2022 года.</div>
+            </div>  
+            <aside class="navigation_body">
+                <div class="navigation"><b>Навигация</b></div> <br> 
+                <div class="nav_text navigation"><a href="#2" class="nav_none">Преимущества микроразметки</a></div> <br>
+                <div class="nav_text navigation"><a href="#3" class="nav_none">Составляющие микроразметки</a></div> <br>
+                <div class="nav_text navigation"><a href="#4" class="nav_none">Словари микроразметки</a></div> <br>
+                <div class="nav_text navigation"><a href="#5" class="nav_none">Микроформаты</a></div> <br>
+                <div class="nav_text navigation"><a href="#6" class="nav_none">Синтаксисы микроразметки</a></div> <br>
+                <div class="nav_text navigation"><a href="#7" class="nav_none">Реализация микроразметки</a></div> <br>
+                <div class="nav_text navigation"><a href="#8" class="nav_none">Микроразметка товаров в интернет-магазине</a></div> <br>
+                <div class="nav_text navigation"><a href="#9" class="nav_none">Проверка микроразметки на ошибки</a></div> <br>
+                <div class="nav_text navigation"><a href="#10" class="nav_none">Итоги</a></div> <br>
+            </aside>  
+        </div>
+        
+        <div class="comment">
+            <div class="comments comments_pdd_l"><i>«Микроразметку используем всегда на любых типах проектов. Трудностей на практике бывает мало. Чаще всего, программист при внедрении правок может задать уточняющие вопросы, если возникнут сложности. В Яндексе сейчас, микроразметка никак не влияет на основные показатели. CTR увеличивается ненамного только после загрузки YML-файла, который улучшает представление сниппета в поиске. Также в сниппет автоматически добавляется рейтинг магазина из Яндекс.Маркета. В Google ситуация иначе. Микроразметка напрямую влияет на отображение в поисковой выдаче. Конкретно, разметка хлебных крошек, информация о продуктах, информация о разделах. По ситуации применяются эмодзи. Также периодически нужна разметка о событиях. Именно эта разметка показывается на выдаче и влияет на CTR, что способствует повышению средней позиции и соотвественно трафику.»</i>
+            <br>
+            <div class="author"><b>Айрат Рахимзянов, Автор телеграм-канала «SEO-секретики»</b></div>
+            </div>
+            <div class="comments comments_pdd_r"><i>«При оптимизации любого сайта обязательно проверяется наличие микроразметки. Внедрить её на сайт не так сложно, к тому же у поисковиков есть свои инструменты для проверки структурированных данных, а в Google даже есть инструмент, который поможет добавить разметку на страницу сайта. Для интернет-магазинов пригодится микроразметка товаров. Для этого в словаре семантической разметки schema.org есть типы данных Product и Offer. После добавления такой микроразметки, сниппет страницы товара, помимо заголовка и описания, будет содержать цену, рейтинг, наличие, изображение, информацию об акциях и доставке. Микроразметка необходима для формирования расширенного сниппета, который будет включать в себя больше информации о содержимом страницы и, соответственно, получать больше кликов. Увеличение CTR положительно влияет на ранжирование и посещаемость сайта.»</i>
+            <br>
+            <div class="author"><b>Полина Карлова, AdClients, старший менеджер</b></div>
+            </div>
+        </div>
+        <div class="maybe"><h1>Может быть интересно:</h1></div>
+        <div class="intresting_body">
+            <div class="i_b_img marning_left"><a class="aa" href="schema.html">
+                <img class="img_intr" src="resources/schema.jpg" width="100%" alt=""> 
+                <div class="date_intresting">25 сентября 2023</div>
+                <div class="text_intersting">Микроразметка schema.org</div>
+                <br>
+            </a></div>
+            <div class="i_b_img marning_center">
+                <img class="img_intr" src="resources/test.png" width="100%" alt="">
+                <div class="date_intresting">__.__.____</div>
+                <div class="text_intersting">Будет позже</div>
+                <br>
+            </div>
+            <div class="i_b_img marning_right">
+                <img class="img_intr" src="resources/test.png" width="100%" alt="">
+                <div class="date_intresting">__.__.____</div>
+                <div class="text_intersting">Будет позже</div>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="div_up">
+            <button class="pure-button"><a href="#" class="up">Вверх</a></button>
+        </div>
+
+    </div>
+
+
+    <footer class="basement">
+        <div class="marning_left marning_b"><a class="a ahover"  href="license.html">Лицензионное соглашение</a></div>
+        <div class="marning_center marning_b"><a class="a ahover" href="license.html">Политика конфиденциальности</a></div>
+        <div class="marning_right marning_b">© 2023 Александр Думенко</div>
+    </footer>
+
+
+</body>
+</html>

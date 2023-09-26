@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title>Использование микроразметки</title>
+</head>
+<body>
+   
+    
+    <div class="header"> 
+
+
+        <div class="logo">
+                <b>ЭТО ЛОГОТИП</b>
+        </div>
+
+
+        <div class="botton_head"> 
+            <div class="pure-menu pure-menu-horizontal">
+                <a href="home.html" class="pure-menu-heading pure-menu-link">Главная</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link">Ещё что-то</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="" class="pure-menu-link">О нас</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="contacts.html" class="pure-menu-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+   
+
+    <div class="bodys" id="1">
+
+
+        <div class="head_body">
+            <h1 class="text_head_body">Микроразметка schema.org</h1>
+            <h2 class="date_head_body">25 сентября 2023</h2>    
+        </div> 
+
+
+        <div class="blog"> 
+
+
+            <div class="text_body">
+                <div id="1" class="text">Единый стандарт schema.org появился еще в 2011 году по инициативе трех крупнейших поисковых систем — Google, Microsoft, Yahoo. Позже новую схему поддержали и гиганты интернет-поиска, включая отечественный «Яндекс».</div>
+                <div class="text">В 2021 году семантическую разметку Schema.org используют более 10 миллионов сайтов: как для разметки веб-страниц, так и сообщений электронной почты. Многие известные сервисы, такие как Google, Microsoft, Pinterest, Yandex, используют словари Schema.org для улучшения пользовательского опыта.</div>
+                <div class="text">
+                    <img src="resources/schema_head.png" width="100%" alt="Пример семантической разметки schema.org для хедера сайта">
+                    <div class="alt">Пример семантической разметки schema.org для хедера сайта</div>
+                </div>
+                <div class="text">Schema.org создавалась для улучшения качества поисковой выдачи. Микроразметка делается тегами, включающими дополнительные атрибуты. Они дают возможность вручную указывать метаданные, подсказывая роботам поисковых систем, что именно находится на выбранной веб-странице.</div> 
+                <div class="text">
+                    <div class="blue_split">Если страница имеет корректную семантическую разметку, то в результатах поиска будет отображаться не стандартный сниппет, а расширенный. Он будет включать, например, цену товара, адрес магазина или артикул товара.</div>
+                </div>
+                <div id="2" class="text"><b>Устройство schema.org</b> <br> По своей структуре schema.org — это словарь семантической разметки. Он включает в себя множество классов, которые используются для того, чтобы указывать контентное содержимое веб-страницы. Словарь включает в себя подробное указание свойств для каждого класса. Синтаксис — второй обязательный элемент микроразметки. Можно сказать, что словарь — подобие языка программирования, а синтаксис — метод его использования.</div>
+                <div class="text">
+                    <div class="blue_split">Синтаксис — метод указания свойств и других данных словаря. Указание этих данных происходит непосредственно в коде веб-страницы</div>
+                </div>
+                <div class="text">Кроме Schema.org существуют и другие словари, например Open Graph, который одно время был самым популярным в Рунете. Продолжались разработки иных словарей: Microdata, RDFa, FOAF, DUBLIN CORE.</div>
+                <div class="text">К 2021 году образовалась существенная путаница из нескольких словарей, в которых используется разный синтаксис</div>
+                <div class="text">Для разметки Schema.org могут применяться несколько вариантов синтакиса: от микроданных до JSON-LD, который активно рекомендует Google.</div>
+                <div class="text">
+                    <img src="resources/schema_sint.png" width="100%" alt="Разные словари / синтаксисы семантической разметки">
+                    <div class="alt">Разные словари / синтаксисы семантической разметки</div>
+                </div>
+                <div id="3" class="text"><b>Главные атрибуты schema.org</b><br>Семантическая разметка schema.org базируется на трех главных атрибутах:
+                    <table class="pure-table">
+                        <tbody>
+                            <tr class="pure-table-odd">
+                                <td>1</td>
+                                <td><b>itemscope</b></td>
+                                <td>показывает область действия словаря микроданных и определяет область данных. При помощи этого атрибута поисковый робот понимает, что на странице находится описание определенного объекта. Атрибут itemscope всегда используется в связке с атрибутом itemtype. </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><b>itemtype</b></td>
+                                <td>показывает адрес словаря, задействованного для создания разметки. В нашем случае атрибут itemtype будет вести на домен schema.org.</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>3</td>
+                                <td><b>itemprop</b></td>
+                                <td>позволяет добавить определенное свойство к выбранному элементу. Пара имя-значение.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="4" class="text"><b>Типы данных</b> <br>Полный список типов доступен на schema.org. Чаще всего размечаются следующие типы данных:</div>
+                <div class="text blue_split">Статьи (Article). <br>
+                    Хлебные крошки (BreadcrumbList). <br>
+                    Товары (Product). <br>
+                    Отзывы (Review). <br>
+                    FAQ (FAQPage). <br>
+                    Организации (Organization)</div>
+                <div id="5" class="text"><b>Немного о тегах</b> <br> Если вы знакомы с HTML, то никаких сложностей с тегами не возникнет. Для начинающих вебмастеров отметим — в коде семантической разметки schema.org используются стандартные HTML-теги: <br></div>
+                <div class="text blue_split"><b>div</b> — «контейнерный» тег для разграничения разделов документа. div позволяет упорядочивать блочные элементы и показывать начало / конец описываемого объекта;</div>
+                <div class="text blue_split"><b>span</b> — строчный контейнер. Пригодится для описания объекта отрывками текста;</div>
+                <div class="text blue_split"><b>link</b> — так называемый пустой элемент (примеры пустых элементов: &lt;area&gt;, &lt;base&gt;, &lt;br&gt;, &lt;col&gt;, &lt;embed&gt;), использующийся для задания канонического URL. Для указания ссылки этот тег используется совместно с href-атрибутом;</div>
+                <div class="text blue_split"><b>time</b> — определяет дату или время. Обратите внимание на формат, который нужно указывать. Дата — только в формате YYYY-MM-DD (например: 2021-07-22). Время — только в формате Тhh:mm (например: Т19:10) или в формате Тhh:mm:ss (например: Т05:10:10);</div>
+                <div class="text blue_split"><b>&lt;a&gt;видимая ссылка&lt;/a&gt;</b> — этот тег нужен, чтобы показать URL, которые должны быть видимы на странице;</div>
+                <div class="text blue_split"><b>&lt;meta&gt;</b> — для хранения дополнительной информации.</div>
+                <div id="6" class="text"><b>Нужно ли внедрять микроразметку schema.org на своем сайте?</b></div>
+                <div class="text blue_split">Поисковые системы рекомендуют внедрять schema.org всем сайтам. Тем не менее ни «Яндекс», ни Google не гарантируют 100% попадания в расширенные результаты поиска для сайтов, использующих семантическую разметку</div>
+                <div class="text">Сама поисковая система принимает окончательное решение о включении вашего сайта в расширенные результаты поиска. Ваша разметка — лишь рекомендация для Google или «Яндекс», последнее слово всегда остается за ними. Это, пожалуй, единственный недостаток schema.org.</div>
+                <div class="text">Достоинств больше:</div>
+                <div class="text">
+                    <div class="blue_split">1. Поисковые системы лучше понимают ваш сайт и знают содержание страницы.</div>
+                    <br>
+                    <div class="blue_split">2. Ваш сайт может попасть в расширенный сниппет. Более привлекательный сниппет = лучшая кликабельность на поиске.</div>
+                    <br>
+                    <div class="blue_split">3. Увеличение CTR положительно влияет на количество конверсий.</div>
+                    <br>
+                    <div class="blue_split">4. Размеченные страницы получают лучшие позиции в долгосрочной перспективе.</div>
+                    <br>
+                    <div class="blue_split">5. Дополнительные параметры в сниппете улучшают пользовательский опыт.</div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            
+
+            <aside class="navigation_body">
+                <div class="navigation"><b>Навигация</b></div> <br> 
+                <div class="nav_text navigation"><a href="#1" class="nav_none">Единый стандарт schema.org</a></div> <br>
+                <div class="nav_text navigation"><a href="#2" class="nav_none">Устройство schema.org</a></div> <br>
+                <div class="nav_text navigation"><a href="#3" class="nav_none">Главные атрибуты schema.org</a></div> <br>
+                <div class="nav_text navigation"><a href="#4" class="nav_none">Типы данных</a></div> <br>
+                <div class="nav_text navigation"><a href="#5" class="nav_none">Немного о тегах</a></div> <br>
+                <div class="nav_text navigation"><a href="#6" class="nav_none">Нужно ли внедрять микроразметку schema.org на своем сайте?</a></div> <br>
+            </aside>  
+
+
+        </div>
+
+
+        <div class="maybe"><h1>Может быть интересно:</h1></div>
+        <div class="intresting_body">
+            <div class="i_b_img marning_left"><a class="aa" href="index.html">
+                <img class="img_intr" src="resources/microrazm.jpg" width="100%" alt=""> 
+                <div class="date_intresting">19 сентября 2023</div>
+                <div class="text_intersting">Что такое микроразметка и зачем она нужна?</div>
+                <br>
+            </a></div>
+            <div class="i_b_img marning_center">
+                <img class="img_intr" src="resources/test.png" width="100%" alt="">
+                <div class="date_intresting">__.__.____</div>
+                <div class="text_intersting">Будет позже</div>
+                <br>
+            </div>
+            <div class="i_b_img marning_right">
+                <img class="img_intr" src="resources/test.png" width="100%" alt="">
+                <div class="date_intresting">__.__.____</div>
+                <div class="text_intersting">Будет позже</div>
+                <br>
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <div class="div_up">
+            <button class="pure-button"><a href="#" class="up">Вверх</a></button>
+        </div>
+
+    </div>
+
+
+    <footer class="basement">
+        <div class="marning_left marning_b"><a class="a ahover" href="license.html">Лицензионное соглашение</a></div>
+        <div class="marning_center marning_b"><a class="a ahover" href="license.html">Политика конфиденциальности</a></div>
+        <div class="marning_right marning_b">© 2023 Александр Думенко</div>
+    </footer>
+
+
+</body>
+</html>
